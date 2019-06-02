@@ -5,7 +5,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Bootstrap 101 Template</title>
 
-	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="../styles/main.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <!-- Bootstrap -->
 	<!-- Latest compiled and minified CSS -->
@@ -22,7 +22,7 @@
     <![endif]-->
   </head>
   <body>
-	<input type="hidden" id="menu" value="detail-va">
+	<input type="hidden" id="menu" value="profile">
 	<nav class="navbar navbar-default">
 			<div class="container-fluid">
 			  <!-- Brand and toggle get grouped for better mobile display -->
@@ -48,11 +48,10 @@
 	
 		<div class="sidebar">
 			<ul>
-				<a href="flagging.html"><li data-target="flagging">Flagging</li></a>
-				<a href="transaksi.html"><li data-target="transaksi">Transaksi</li></a>
-				<a href="history_transaksi.html"><li data-target="history_transaksi">History Transaksi</li></a>
-				<a href="user.html"><li data-target="user">User</li></a>
-				<a href="list_va.html"><li data-target="detail-va" class="active">List VA</li></a>
+				<a href="keranjang.html"><li data-target="keranjang">Keranjang</li></a>
+				<a href="list_pesanan.html"><li data-target="list_pesanan">List Pesanan</li></a>
+				<a href="profile.html"><li data-target="profile" class="active">Profile</li></a>
+				<a href="user.html"><li data-target="menu_laninnya">Menu Lainnya</li></a>
 			</ul>
 		</div>
 	
@@ -60,7 +59,7 @@
 		<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 		<div class="panel">
-			<div class="panel-heading">DETAIL VA</div>
+			<div class="panel-heading">DETAIL TOP UP</div>
 			<div class="bordered-box">
 				<div class="logo">
 					<img src="http://beta.docotel.net/images/logo/docotel-logo.png" alt="" class="doco-logo">
@@ -105,7 +104,7 @@
 							</tr>			
 						</tbody></table>
 			</div>
-				<a href="list_va.html"><button class="btn btn-primary" type="button">Kembali</button></a>
+				<a href="profile.html"><button class="btn btn-primary" type="button">Kembali</button></a>
 		</div>
 		</div>
 		</div>
@@ -116,6 +115,6 @@
     
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="scripts/main.js"></script>	
+	<script src="../scripts/main.js"></script>	
 
 </body></html>

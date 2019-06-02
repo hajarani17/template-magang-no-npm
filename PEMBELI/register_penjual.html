@@ -5,7 +5,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Bootstrap 101 Template</title>
 
-	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="../styles/main.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <!-- Bootstrap -->
 	<!-- Latest compiled and minified CSS -->
@@ -22,7 +22,9 @@
     <![endif]-->
   </head>
   <body>
-  <input type="hidden" id="menu" value="user">
+	
+
+	<input type="hidden" id="menu" value="flagging">
 	<nav class="navbar navbar-default">
 			<div class="container-fluid">
 			  <!-- Brand and toggle get grouped for better mobile display -->
@@ -34,77 +36,72 @@
 				  <span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="#">Docotel</a>
+				<a class="navbar-brand" href="#">Login</a>
+				<a class="navbar-brand" href="#">Register</a>
 			  </div>
-		  
-			  <!-- Collect the nav links, forms, and other content for toggling -->
-			  
-				<ul class="nav navbar-nav navbar-right">
-				  <li><a href="#">Logout</a></li>
-				  
-				</ul>
-			  </div><!-- /.navbar-collapse -->
-			<!-- /.container-fluid -->
+
 	</nav>
 	
-		<div class="sidebar">
-			<ul>
-				<a href="flagging.html"><li data-target="flagging">Flagging</li></a>
-				<a href="transaksi.html"><li data-target="transaksi">Transaksi</li></a>
-				<a href="history_transaksi.html"><li data-target="history_transaksi">History Transaksi</li></a>
-				<a href="user.html"><li data-target="user" class="active">User</li></a>
-				<a href="list_va.html"><li data-target="detail-va">List VA</li></a>
-			</ul>
+
+	<div class="login-content">
+			<div class="panel">
+				<div class="panel-heading">REGISTER</div>
+				<div class="panel-body">
+					<form class="form-horizontal">
+						<div class="login-form">
+							<table class="custom-table">
+								<tbody>
+									<tr class="success">
+										<div class="radio"><td width="200px"><label><input type="radio" name="optradio" checked>Penjual</label></td><td width="200px"><label><input type="radio" name="optradio" checked>Pembeli</label></td></div>
+									</tr>
+									<tr>
+										<td><h5> <div class="register">User ID</h5></td></div> 
+										<td><input type="text" class="form-control" id="inputEmail3"></td>
+									</tr>
+									<tr>
+										<td><h5> <div class="register">Email Address</h5></td></div>
+										<td><input type="text" class="form-control" id="inputEmail3"></td>
+									</tr>
+									<tr>
+										<td><h5> <div class="register">Password</h5></td></div>
+										<td><input type="password" class="form-control" id="inputEmail3"></td>
+									</tr>
+									<tr>
+											<td><h5> <div class="register">Repassword</h5></td></div>
+										<td><input type="password" class="form-control" id="inputEmail3"></td>
+									</tr>
+									<tr>
+										<td><h5> <div class="register">NPWP Number</h5></td></div>
+										<td><input type="number" class="form-control" id="inputEmail3"></td>
+									</tr>
+									<tr>
+										<td><h5> <div class="register">No Handphone</h5></td></div>
+										<td><input type="number" class="form-control" id="inputEmail3"></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>
+											<button class="btn btn-primary " type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Register</button>
+										</td>
+									</tr>
+									<tr>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</form>
+				</div>
+			</div>
+			
 		</div>
 	
-	<div class="content">
-    <div class="panel">
-      <div class="panel-heading">USER</div>
-    </div>     
-      <table class="table table-bordered">
-        <tbody><tr class="success">
-          <td>No</td>
-          <td>Username</td>
-          <td>Peran</td>
-          <td>Aksi</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Anggita</td>
-          <td>Pembeli</td>
-          <td>Detail</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Admin</td>
-          <td>Admin</td>
-          <td>Detail</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Mamas</td>
-          <td>Penjual</td>
-          <td>Detail</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>Ana</td>
-          <td>Pembeli</td>
-          <td>Detail</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>Anna</td>
-          <td>Pembeli</td>
-          <td>Detail</td>
-        </tr>
-      </tbody></table>
-	</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="scripts/main.js"></script>	  
+	<script src="../scripts/main.js"></script>
 
 </body></html>
