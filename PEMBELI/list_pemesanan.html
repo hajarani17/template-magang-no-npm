@@ -23,7 +23,7 @@
   </head>
   <body>
 	<input type="hidden" id="menu" value="detail-va">
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-dark">
 			<div class="container-fluid">
 			  <!-- Brand and toggle get grouped for better mobile display -->
 			  <div class="navbar-header">
@@ -59,8 +59,10 @@
 		<div class="panel">
 			<div class="panel-heading">LIST PEMESANAN</div>
 		</div>
-		<p><span class="sukses">Pesananmu Berhasil</span></p>
-		
+		<div class= "pesanan">
+		<p>Pesananmu Berhasil</span></p>
+		</div>
+
 		<table class="table table-bordered">
 			<tbody><tr class="success">
 				<td>#</td>
@@ -79,7 +81,7 @@
 				<td>1</td>
 				<td>Rp. 10.000</td>
 				<td><span class="belum_verif">Belum Verif</span></td>
-				<td><span class="cash">Cash</span></td>
+				<td><span class="pembayaran">Cash</span></td>
 				<td><a href="list_pesanan.html">Detail </a></td>
 			</tr>
 			<tr>
@@ -89,7 +91,7 @@
 				<td>2</td>
 				<td>Rp. 60.000</td>
 				<td><span class="proses">Proses</span></td>
-				<td><span class="saldo_docotin">Saldo Docotin</span></td>
+				<td><span class= "sukses">Saldo Docotin</span></td>
 				<td><a href="list_pesanan_proses.html">Detail </a></td>
 			</tr>
 			<tr>
@@ -99,7 +101,7 @@
 				<td>2</td>
 				<td>Rp. 60.000</td>
 				<td><span class="sukses">Sukses</span></td>
-				<td><span class="saldo_docotin">Saldo Docotin</span></td>
+				<td><span class= "sukses">Saldo Docotin</span></td>
 				<td><a href="list_pesanan_sukses.html">Detail </a></td>
 			</tr>
 			<tr>
@@ -109,7 +111,7 @@
 				<td>2</td>
 				<td>Rp. 60.000</td>
 				<td><span class="habis">Habis</span></td>
-				<td><span class="saldo_docotin">Saldo Docotin</span></td>
+				<td><span class= "sukses">Saldo Docotin</span></td>
 				<td><a href="list_pesanan_habis.html">Detail </a></td>
 			</tr>
 		</tbody></table>
@@ -122,5 +124,7 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="../scripts/main.js"></script>	
-
+	<script>
+		setTimeout(function(){ $('.pesanan').hide() }, 3000);
+	</script>
 </body></html>

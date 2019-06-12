@@ -22,10 +22,8 @@
     <![endif]-->
   </head>
   <body>
-	
-
-	<input type="hidden" id="menu" value="flagging">
-	<nav class="navbar navbar-dark">
+	<input type="hidden" id="menu" value="detail-va">
+	<nav class="navbar navbar-default">
 			<div class="container-fluid">
 			  <!-- Brand and toggle get grouped for better mobile display -->
 			  <div class="navbar-header">
@@ -36,53 +34,77 @@
 				  <span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="#">Docotel</a>
-				<a class="navbar-brand" href="#">Login</a>
-				<a class="navbar-brand" href="#">Register</a>
 			  </div>
-
+		  
+			  <!-- Collect the nav links, forms, and other content for toggling -->
+			  
+				<ul class="nav navbar-nav navbar-right">
+				  <li><a href="#">Logout</a></li>
+				  
+				</ul>
+			  </div><!-- /.navbar-collapse -->
+			<!-- /.container-fluid -->
 	</nav>
 	
-		<div class="login-content">
-			<div class="panel">
-				<div class="panel-heading">LOGIN</div>
-				<div class="panel-body">
-					<form class="form-horizontal">
-						<div class="login-form">
-							<table class="custom-table">
-								<tbody>
-									<tr class="success">
-										<td><h5>User ID</h5></td>
-										<td><input type="text" class="form-control" id="inputEmail3"></td>
-									</tr>
-									<tr>
-										<td><h5>Password</h5></td>
-										<td><input type="password" class="form-control" id="inputEmail3"></td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>
-										<a href="index.html"><button class="btn btn-primary " type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Login</button></a>
-										<a href="register.html"><button class="btn btn-primary " type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Register</button></a>
-										</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td><a href="">Forget Password ?</a></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</form>
-				</div>
-			</div>
-			
+		<div class="sidebar">
+			<ul>
+				<a href="keranjang.html"><li data-target="keranjang">Keranjang</li></a>
+				<a href="list_pesanan.html"><li data-target="list_pesanan">List Pesanan</li></a>
+				<a href="profile.html"><li data-target="profile" class="active">Profile</li></a>
+				<a href="user.html"><li data-target="menu_lainnya">Menu Lainnya</li></a>
+			</ul>
 		</div>
+	
+	<div class="content">
+		<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+		<div class="panel">
+			<div class="panel-heading">DETAIL VA</div>
+			<div class="bordered-box">
+				<div class="logo">
+					<img src="http://beta.docotel.net/images/logo/docotel-logo.png" alt="" class="doco-logo">
+				</div>
+					<h4>DOCO CAFE DOCOTEL TEKNOLOGI</h4>
+					<h5>TOP UP SALDO</h5>
+						<table class="detail-va centered-table">
+							<tbody><tr class="success">
+								<td>Kode VA Debit</td>
+								<td>:</td>
+								<td>125554466001</td>
+							</tr>
+							<tr>
+								<td>Nama Pembeli</td>
+								<td>:</td>
+								<td>Florida Anggitasari</td>
+							</tr>
+							<tr>
+								<td>Email Pembeli</td>
+								<td>:</td>
+								<td>florida.anggita@gmail.com</td>
+							</tr>
+							<tr>
+								<td>Tanggal Pengajuan</td>
+								<td>:</td>
+								<td>12 Maret 2019</td>
+							</tr>
+							<tr>
+								<td>Jumlah Top up</td>
+								<td>:</td>
+								<td>Rp 1.000.000,-</td>
+							</tr>			
+						</tbody></table>
+			</div>
+				<a href="profile.html"><button class="btn btn-primary" type="button">Kembali</button></a>
+		</div>
+		</div>
+		</div>
+	</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="../scripts/main.js"></script>
+	<script src="../scripts/main.js"></script>	
 
 </body></html>

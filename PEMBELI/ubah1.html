@@ -48,13 +48,41 @@
 	
 		<div class="sidebar">
 			<ul>
-				<a href="keranjang.html"><li data-target="flagging" class="active">Keranjang</li></a>
-				<a href="transaksi.html"><li data-target="transaksi">List Pesanan</li></a>
-				<a href="profile.html"><li data-target="history_transaksi">Profile</li></a>
+				<a href="keranjang.html"><li data-target="keranjang" class="active">Keranjang</li></a>
+				<a href="list_pesanan.html"><li data-target="list_pesanan">List Pesanan</li></a>
+				<a href="profile.html"><li data-target="profile">Profile</li></a>
 				<a href="user.html"><li data-target="user">Menu Lainnya</li></a>
 			</ul>
 		</div>
-	
+
+
+<!-- modal content here -->
+<!-- Modal -->
+<div class="modal fade" id="pilih_pembayaran" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title centered" id="myModalLabel"><strong>Pilih Pembayaran</strong></h4>
+        </div>
+        <div class="modal-body">
+          <div class="radio"><td width="200px"><label><input type="radio" name="optradio" checked>Cash</label></td>
+          <br><br>
+          <div class="saldo_docotin">
+            <label><input type="radio" name="optradio" checked>Saldo Docotin</label>
+            <span class= "sukses"><p>Saldo Anda Rp. 70.000</p></span>
+          </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+        <a href="list_pemesanan.html"><button type="button" class="btn btn-primary">Lanjutkan</button></a> 
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
 	<div class="content">
     <div class= "box-masuk">
       <div class= "row">
@@ -105,7 +133,11 @@
             <h5 class="total"> <span id="count">Rp 60.000</span></h5>
             <br><br>
             
-            <button type="button" class="btn btn-success">Pilih Pembayaran</button>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#pilih_pembayaran">
+                Pilih Pembayaran
+              </button>
+  
             <br><br>  
           </div> 
         </div> 
